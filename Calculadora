@@ -1,0 +1,12 @@
+# Programa 12: Calculadora de IMC
+peso = float(input("Tu peso en kg: "))
+altura = float(input("Tu altura en metros (ej. 1.75): "))
+imc = peso / (altura ** 2)
+
+print(f"Tu IMC es: {imc:.2f}")
+if imc < 18.5:
+    print("Clasificación: Bajo peso")
+elif 18.5 <= imc < 25:
+    print("Clasificación: Peso normal")
+else:
+    print("Clasificación: Sobrepeso")
